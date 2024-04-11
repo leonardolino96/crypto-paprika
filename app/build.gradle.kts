@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("kotlin-kapt")
 }
 
 android {
@@ -70,4 +71,8 @@ dependencies {
     // Retrofit
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
+
+    // Dagger-Hilt
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.android.compiler)
 }
