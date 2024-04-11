@@ -1,4 +1,4 @@
-package com.leonardolino.cryptopaprika.ui.theme
+package com.leonardolino.cryptopaprika.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build
